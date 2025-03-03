@@ -1,0 +1,282 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #62a30b9e;
+    font-family: PT Sans, sans-serif;
+    color: black;
+}
+
+
+.green {
+    color: green;
+}
+
+.light-green {
+    color: #62a30b;
+}
+
+.black {
+    color: black;
+}
+
+h1 {
+    font-size: 24px;
+    font-family: PT serif, serif;
+    font-weight: 500;
+    background-color: #f6f6f6;
+    border-top: 1px solid lightgray;
+    border-bottom: 1px solid lightgray;
+    padding-top: 25px;
+    padding-bottom: 25px;
+    margin-top: 10px;
+    margin-bottom: 30px;
+}
+
+.margin--30 {
+    margin-left: -30px;
+    margin-right: -30px;
+    padding-left: 30px;
+}
+
+h2 {
+    font-size: 20px;
+    font-family: PT serif, serif;
+    line-height: 1.5;
+    font-weight: 500;
+    padding-bottom: 20px;
+}
+
+h4 {
+    padding-bottom: 20px;
+}
+
+p {
+    font-size: 16px;
+    line-height: 1.5;
+    padding-bottom: 20px;
+}
+
+/* main container centered */
+div.container {
+    max-width: 1300px;
+    margin: 0 auto;
+    padding-left: 30px;
+    padding-right: 30px;
+    background-color: white;
+}
+
+/* header */
+
+.logo {
+    width: 335px;
+    height: 92px;
+}
+
+div#desktop-menu {
+    padding: 20px 0;
+
+    & a {
+        text-decoration: none;
+    }
+
+    & a:hover {
+        color: #62a30b;
+    }
+
+}
+
+.menu-item {
+    font-size: 16px;
+    font-weight: 600;
+    color: black;
+    /* give some height so mouse over keeps submenu open  */
+    height: 30px;
+}
+
+.nav-button {
+    border: 0;
+    font-size: inherit;
+    font-weight: inherit;
+    font-family: inherit;
+    background-color: inherit;
+}
+
+.menu-link {
+    color: black;
+    text-decoration: none;
+}
+
+div.sub-menu {
+    /* takes it out of the flow but in the same position as no top, left set */
+    position: absolute;
+    background-color: #f6f6f6;
+    z-index: 1;
+    margin-top: 5px;
+    margin-left: 5px;
+
+    ul {
+        padding: 10px;
+    }
+
+    li {
+        border-bottom: 1px solid lightgray;
+        list-style: none;
+        padding: 10px;
+        font-weight: 500;
+    }
+
+    a {
+        text-decoration: none;
+        color: black;
+    }
+}
+
+/* footer */
+
+div.footer {
+    background-color: #3d3d3d;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    font-size: 12px;
+}
+
+/* shared */
+
+div.flex-container {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+div.grid-container {
+    display: grid;
+    grid-template-columns: 300px 1fr;
+}
+
+.main-image {
+    width: 100%;
+    height: 100%;
+    padding-bottom: 20px;
+}
+
+/* home page */
+div#home-left {
+    padding: 20px 50px 20px 50px;
+}
+
+
+.flies {
+    width: 200px;
+    height: 148px;
+}
+
+.small-pool {
+    width: 340px;
+    height: 200px;
+    padding: 20px;
+}
+
+/* permits */
+
+ul {
+    padding-left: 20px;
+    padding-bottom: 20px;
+}
+
+table.grey {
+    border: 1px solid lightgray;
+    border-collapse: collapse;
+    margin: 30px;
+
+    & th,
+    td {
+        border: lightgray 1px solid;
+        padding: 10px 100px 10px 10px;
+    }
+}
+
+
+div.info-box {
+    width: 300px;
+    padding: 20px;
+    margin: 20px;
+    background-color: #f6f6f6;
+    text-align: center;
+
+    & p {
+        padding: 0;
+    }
+
+    & a {
+        text-decoration: none;
+        cursor: pointer;
+    }
+
+    & div.link-button {
+        padding: 10px;
+        margin-top: 10px;
+        background-color: #62a30b;
+        color: white;
+        border: 0;
+        cursor: pointer;
+    }
+}
+
+/* conservation  */
+div.link-box {
+    text-align: center;
+    padding: 30px;
+
+    & a {
+        color: green;
+        text-decoration: underline;
+        cursor: pointer;
+    }
+}
+
+.link-box-image {
+    width: 100%;
+    height: 100%;
+}
+
+/* rivers */
+.map-image {
+    border: 1px solid lightgray;
+    width: 270px;
+    height: 230px;
+}
+
+.vertical-centre {
+    margin: auto 0;
+}
+
+/* club history  */
+
+div.quotation {
+    font-style: italic;
+    padding: 20px;
+    margin: 20px;
+    background-color: #f6f6f6;
+    border-left: #62a30b 5px solid;
+}
+
+.large-image {
+    width: 480px;
+    height: 720px;
+}
+
+.large-image-container {
+    max-width: 480px;
+    margin: 0 auto;
+}
+
+/* all rivers */
+div#all-rivers-map {
+    max-width: 570px;
+    margin: 0 auto;
+    padding: 20px;
+}
